@@ -24,7 +24,6 @@ import { NewsRouter } from "./routers/NewsRouter.js";
 import { AboutPageRouter } from "./routers/aboutPageRouter.js";
 import { FAQRouter } from "./routers/FAQRouter.js";
 import { SecuritySectionRouter } from "./routers/SecuritySectionRouter.js";
-import { ReceiptRouter } from "./routers/ReciptRouter.js";
 
 const app = express();
 
@@ -120,7 +119,6 @@ app.use("/api/news",NewsRouter)
 app.use("/api/aboutpage",AboutPageRouter)
 app.use("/api/faq",FAQRouter)
 app.use("/api/Security",SecuritySectionRouter)
-app.use("/api/receipts",ReceiptRouter)
 
 // Root route
 app.get("/", (req, res) => {

@@ -1,8 +1,8 @@
-import { ParksList } from "@/components/parks copy/parks-list"
 import { Button } from "@/components/ui/button"
 import { PlusCircle } from "lucide-react"
 import Link from "next/link"
 import { ProtectedComponent } from "@/components/protectedComponent"
+import { ParksList } from "@/components/Parks/parks-list"
 
 export default function ParksPage() {
   return (

@@ -1,4 +1,4 @@
-import { ParkForm } from "@/components/parks copy/park-form"
+import { ParkForm } from "@/components/Parks/park-form"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"

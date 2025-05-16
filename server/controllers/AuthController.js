@@ -10,13 +10,12 @@ export const setUserRole = async (req, res) => {
     try {
       // Extract userId from params and role/parkId from the query parameters.
       const { userId } = req.params;
-      const { role: rawRole, parkId } = req.query;
+      const { role: rawRole, parkId } = req.body;
       const role = decodeURIComponent(rawRole || "");
-  
       // Define allowed roles
       const allowedRoles = ["user", "sous admin"];
       if (!allowedRoles.includes(role)) {
-        return res.status(400).json({ message: "Invalid role. Allowed roles are 'user' and 'sous admin'" });
+        return res.status(400).json({ role:role,message: "Invalid role. Allowed roles are 'user' and 'sous admin'" });
       }
   
       // If setting the role to "sous admin", ensure parkId is provided and valid

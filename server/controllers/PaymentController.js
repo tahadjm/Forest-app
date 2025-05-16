@@ -146,6 +146,7 @@ const WebhookHandler = async (req, res) => {
 
     const event = JSON.parse(rawBody);
     const paymentId = event.data?.id;
+    console.log("Received event:", event);
     
     if (!paymentId) {
       return res.status(400).json({ error: "Invalid event data" });
